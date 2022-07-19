@@ -7,6 +7,8 @@ body {
     height: 2534px;
     font-family: 'Gentium Book Plus', serif;
     background-color: white;
+    margin: 0;
+    padding: 0;
 }
 
 /* Banner */
@@ -103,6 +105,7 @@ body {
 }
 
 .blog p {
+    font-size: 18px;
     display: inline;
     margin-right: 25px;
 }
@@ -120,4 +123,53 @@ body {
     border-radius: 5px;
     color: black;
     font-weight: 500;
+}
+
+
+/*-------------------
+     Footer Section
+------------------ */
+
+.footer {
+    width: 1600px;
+    height: 444px;
+    background-color: #161616;
+}
+
+.footer-text {
+    font-size: 40px;
+    text-align: center;
+    color: white;
+}
+
+hr {
+    margin: 50px 140px 50px 140px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 351px;
+    text-align: center;
+}
+
+.footer-links a {
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+.contacts {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    text-align: center;
+}
+
+.contacts a {
+    margin: 20px;
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+    background-color: #161616;
 }
