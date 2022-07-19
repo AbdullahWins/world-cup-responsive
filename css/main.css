@@ -51,5 +51,54 @@ body {
     Content section
 ------------------- */
 .content {
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.menu {
     display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+}
+
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+}
+
+.blog {
+    border: 1px solid gainsboro;
+    margin-inline-start: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.blog p {
+    display: inline;
+    margin-right: 25px;
+}
+
+.info {
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.info a {
+    text-decoration: none;
+    padding: 0px 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: black;
+    font-weight: 500;
 }
