@@ -133,10 +133,14 @@ body {
 .footer {
     width: 1600px;
     height: 444px;
+    margin: 0;
+    padding: 0;
     background-color: #161616;
 }
 
 .footer-text {
+    padding-top: 110px;
+    margin: 170px 0px 50px 0px;
     font-size: 40px;
     text-align: center;
     color: white;
@@ -162,12 +166,13 @@ hr {
 .contacts {
     display: flex;
     justify-content: center;
-    margin-top: 150px;
+    margin-top: 50px;
     text-align: center;
 }
 
 .contacts a {
-    margin: 20px;
+    margin: 30px;
+    margin-bottom: 0;
     font-size: 24px;
     text-decoration: none;
     color: white;
