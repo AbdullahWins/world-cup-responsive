@@ -1,0 +1,407 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&display=swap');
+
+/* Animations */
+
+.banner-animation {
+    width: 100px;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+/* basic style */
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 1600px;
+    height: 1908px;
+    font-family: 'Gentium Book Plus', serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Banner */
+.banner {
+    width: 1321px;
+    height: 646px;
+    display: flex;
+    margin: 50px 139px 130px 140px;
+    background-color: rgb(5, 5, 5);
+    border-radius: 30px;
+    color: white;
+}
+
+.banner {
+    animation-duration: 2s;
+    animation-name: pop;
+  }
+  
+  @keyframes pop {
+    from {
+      width: 10%;
+    }
+  
+    to {
+      width: 82%;
+    }
+  }
+
+
+.half-width {
+    width: 50%;
+    margin-top: 111px;
+    margin-left: 106px;
+}
+
+.half-width h2 {
+    font-weight: 700;
+    font-size: 60px;
+    margin-bottom: 50px;
+}
+
+.half-width p {
+    margin-bottom: 80px;
+    color: wheat;
+}
+
+.half-width a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    background-color: rgb(204, 15, 15);
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+
+.banner-img img {
+    height: 613px;
+    margin-top: 33px;
+}
+
+/*---------------------
+    Content section
+------------------- */
+.content {
+    margin: 0px 140px 0px 140px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.menu {
+    height: 312px;
+    width: 312px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border-radius: 20px;
+}
+
+.menu a {
+    width: 252px;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(14, 13, 13);
+    background-color: white;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#blog {
+    color: white;
+    background-color: #DD0000;
+}
+
+.matches {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+}
+
+.match {
+    text-align: center;
+    height: 242px;
+    width: 312px;
+    border: 1px solid gainsboro;
+    margin-inline-start: 12px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.flags {
+    margin-top: 53px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info {
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.info a {
+    text-decoration: none;
+    padding: 0px 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: black;
+    font-weight: 500;
+}
+
+
+/*-------------------
+     Footer Section
+------------------ */
+
+.footer {
+    width: 1600px;
+    height: 444px;
+    margin: 0;
+    padding: 0;
+    background-color: #161616;
+}
+
+.footer-text {
+    padding-top: 110px;
+    margin: 170px 0px 50px 0px;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+}
+
+hr {
+    margin: 50px 140px 50px 140px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 351px;
+    text-align: center;
+}
+
+.footer-links a {
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+.contacts {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.contacts a {
+    margin: 30px;
+    margin-bottom: 0;
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+    background-color: #161616;
+}
+
+
+/*-----------------------------------------------
+     Responsive For Tablet and Mobile devices
+-----------------------------------------------*/
+
+
+/*-----------------
+   mobile devices
+-----------------*/
+
+@media screen and (max-width:567px) {
+
+    /* basic style */
+body {
+    width: 375px;
+    height: 3587px;
+    font-family: 'Gentium Book Plus', serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Banner */
+.banner {
+    width: 334px;
+    height: 472px;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 44px 20px 24px 21px;
+    background-color: rgb(5, 5, 5);
+    border-radius: 30px;
+    color: white;
+    text-align: center;
+}
+
+.half-width {
+    margin: 10px 34px 40px 34px;
+    width: 258px;
+    height: 178px;
+}
+
+.half-width h2 {
+    font-weight: 700;
+    font-size: 20px;
+    margin: 28px 53px 5px 53px;
+}
+
+.half-width p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.half-width a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    background-color: rgb(204, 15, 15);
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
+.banner-img img {
+    margin-bottom: -5px;
+    width: 213px;
+    height: 215px;
+}
+
+/*---------------------
+    Content section
+------------------- */
+.content {
+    margin: 0px 20px 0px 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.menu {
+    height: 176px;
+    width: 210px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    margin: 20px 62px;
+    background-color: white;
+}
+
+.menu a {
+    height: 48px;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(14, 13, 13);
+    font-size: 22px;
+    font-weight: 600;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid wheat;
+    border-radius: 10px;
+}
+
+#blog {
+    background-color: #DD0000;
+}
+
+.blogs {
+    margin: 20px 0px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.blog {
+    width: 310px;
+    border: 1px solid wheat;
+    margin-bottom: 30px;
+}
+
+.blog p {
+    font-size: 18px;
+    display: inline;
+    margin-right: 0px;
+}
+
+.info {
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.info a {
+    text-decoration: none;
+    padding: 0px 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: black;
+    font-weight: 500;
+}
+
+
+/*-------------------
+     Footer Section
+------------------ */
+
+.footer {
+    width: 375px;
+    height: 412px;
+    margin: 0;
+    background-color: #161616;
+}
+
+.footer-text {
+    margin: 0;
+    padding-top: 30px;
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+hr {
+    margin: 1em 5em;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px;
+    text-align: center;
+}
+
+.footer-links a {
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.contacts {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.contacts a {
+    margin: 10px;
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+}
+
+}
