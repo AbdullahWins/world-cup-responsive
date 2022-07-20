@@ -146,8 +146,13 @@ body {
     justify-content: center;
 }
 
+.flags span {
+    font-size: 20px;
+    font-weight: 700;
+}
+
 .info {
-    margin-left: 20px;
+    margin-left: 00px;
     margin-top: 10px;
     margin-bottom: 20px;
 }
@@ -225,7 +230,7 @@ hr {
    mobile devices
 -----------------*/
 
-@media screen and (max-width:567px) {
+@media screen and (max-width: 481px) {
 
     /* basic style */
 body {
@@ -336,7 +341,7 @@ body {
 }
 
 .info {
-    margin-left: 20px;
+    margin-left: 0px;
     margin-top: 10px;
     margin-bottom: 20px;
 }
@@ -427,4 +432,42 @@ hr {
     color: white;
 }
 
+}
+
+/*------------------
+   Responsive Tab
+-----------------*/
+
+@media screen and (min-width:481px) and  (max-width:770px) {
+
+    /* basic style */
+    
+    body {
+        width: 834px;
+        height: auto;
+        font-family: 'Gentium Book Plus', serif;
+        background-color: white;
+        margin: 0;
+        padding: 0;
+    }
+
+    .footer {
+        margin: 0;
+        padding-bottom: 170px;
+    }
+
+    .footer-text {
+        font-size: 70px;
+    }
+
+    hr {
+        margin-top: 40px;
+    }
+
+    .footer-links {
+        margin-top: 40px;
+    }
+    .contacts a {
+        font-size: 50px;
+    }
 }

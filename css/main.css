@@ -159,6 +159,10 @@ body {
     font-weight: 500;
 }
 
+.shown {
+    display: none;
+}
+
 
 /*-------------------
      Footer Section
@@ -223,7 +227,7 @@ hr {
    mobile devices
 -----------------*/
 
-@media screen and (max-width:567px) {
+@media screen and (max-width:480px) {
 
     /* basic style */
 body {
@@ -349,6 +353,10 @@ body {
     font-weight: 500;
 }
 
+.shown {
+    display: none;
+}
+
 
 /*-------------------
      Footer Section
@@ -402,4 +410,218 @@ hr {
     color: white;
 }
 
+}
+
+/*-------------------------------------
+           Tab Responsive
+-------------------------------------*/
+
+@media screen and (min-width:481px) and  (max-width:770px) {
+
+/* basic style */
+
+body {
+    width: 834px;
+    height: auto;
+    font-family: 'Gentium Book Plus', serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Banner */
+.banner {
+    width: 734px;
+    height: 398px;
+    margin: 50px;
+    background-color: rgb(5, 5, 5);
+    border-radius: 30px;
+    color: white;
+    text-align: left;
+}
+
+.half-width {
+    margin: 40px;
+    width: 316px;
+    height: 276px;
+}
+
+.half-width h2 {
+    font-weight: 700;
+    font-size: 40px;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.half-width p {
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.half-width a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    background-color: rgb(204, 15, 15);
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
+.banner-img img {
+    margin-top: 58px;
+    width: 323px;
+    height: 340px;
+}
+
+/*---------------------
+    Content section
+------------------- */
+.content {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+}
+
+.menu {
+    height: 64px;
+    width: 734px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.menu a {
+    width: 252px;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(14, 13, 13);
+    background-color: white;
+    border: 1px solid wheat;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#blog {
+    background-color: #DD0000;
+}
+
+.blogs {
+    margin: 30px 0px 0px 0px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.blog {
+    width: 357px;
+    border: 1px solid wheat;
+    margin-bottom: 30px;
+}
+
+.hidden {
+    display: none;
+}
+
+.blog img {
+    width: 357px;
+}
+
+.blog p {
+    font-size: 18px;
+    display: inline;
+    margin-right: 0px;
+}
+
+.info {
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.info a {
+    text-decoration: none;
+    padding: 0px 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: black;
+    font-weight: 500;
+}
+
+.shown {
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: 500;
+    text-align: center;
+    display: block;
+    color: white;
+    background-color: #DD0000;
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin-top: 0px;
+}
+
+
+/*-------------------
+     Footer Section
+------------------ */
+
+.footer {
+    width: 834px;
+    height: 345px;
+    margin: 0;
+    background-color: #161616;
+}
+
+.footer-text {
+    margin: 0;
+    padding-top: 50px;
+    margin-top: 20px;
+    font-size: 35px;
+    text-align: center;
+    color: white;
+}
+
+hr {
+    color: #161616;
+    margin: 1em 4em;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 0px 0px;
+    text-align: center;
+    flex-wrap: unset;
+}
+
+.goal {
+    margin: auto;
+}
+
+.footer-links a {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.contacts {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.contacts a {
+    margin: 10px;
+    font-size: 44px;
+    text-decoration: none;
+    color: white;
+}
 }
