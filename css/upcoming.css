@@ -230,7 +230,6 @@ hr {
     /* basic style */
 body {
     width: 375px;
-    height: 3587px;
     font-family: 'Gentium Book Plus', serif;
     background-color: white;
     margin: 0;
@@ -349,6 +348,30 @@ body {
     border-radius: 5px;
     color: black;
     font-weight: 500;
+}
+
+.matches {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: space-between;
+}
+
+.match {
+    text-align: center;
+    height: 242px;
+    width: 312px;
+    border: 1px solid gainsboro;
+    margin-inline-start: 12px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.flags {
+    margin-top: 53px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
