@@ -1,16 +1,6 @@
 /* Imports */
 @import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&display=swap');
 
-/* Animations */
-
-.banner-animation {
-    width: 100px;
-    position: relative;
-    animation-name: example;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-}
-
 /* basic style */
 
 html {
@@ -39,17 +29,19 @@ body {
 }
 
 .banner {
-    animation-duration: 2s;
+    animation-duration: 3s;
     animation-name: pop;
   }
   
   @keyframes pop {
     from {
-      width: 10%;
+        height: 0%;
+        opacity: 00%;
     }
   
     to {
-      width: 82%;
+        height: 33.88%;
+        opacity: 100%;
     }
   }
 
